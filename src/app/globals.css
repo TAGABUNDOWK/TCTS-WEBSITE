@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --blue-900: #042C53;
+  --blue-800: #0C447C;
+  --blue-600: #185FA5;
+  --blue-400: #378ADD;
+  --blue-100: #B5D4F4;
+  --blue-50:  #E6F1FB;
+
+  --teal-600: #0F6E56;
+  --teal-400: #1D9E75;
+  --teal-50:  #E1F5EE;
+
+  --amber-600: #BA7517;
+  --amber-400: #EF9F27;
+
+  --coral-600: #993C1D;
+  --coral-400: #D85A30;
+
+  --gray-900: #2C2C2A;
+  --gray-600: #5F5E5A;
+  --gray-200: #B4B2A9;
+  --gray-100: #D3D1C7;
+  --gray-50:  #F1EFE8;
+
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+
+  --font-display: var(--font-lora), Georgia, serif;
+  --font-body: var(--font-dm), system-ui, sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background-color: #f4f2ed;
+  color: var(--gray-900);
+  min-height: 100vh;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #111110;
+    color: #e8e6df;
+  }
+}

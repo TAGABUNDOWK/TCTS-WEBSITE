@@ -1,8 +1,8 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import { LoginRequestDto, OtpRequestDto } from "@/src/modules/auth/login/dto";
-import { sendLoginOtp, verifyLoginOtp } from "@/src/modules/auth/login/login-service";
+import { LoginRequestDto, OtpRequestDto } from "@/modules/auth/login/dto";
+import { sendLoginOtp, verifyLoginOtp } from "@/modules/auth/login/login-service";
 
 type LoginStep = "credentials" | "otp";
 type StatusType = "idle" | "loading" | "error" | "success";
